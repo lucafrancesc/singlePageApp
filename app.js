@@ -8,6 +8,6 @@ $(function() {
 
     function display() {
       value = $("#text").val();
-      $('#displayText').text(example.showText(value));
+      $('#displayText').append(example.showText(value) + " ");
     };
 });

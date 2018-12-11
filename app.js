@@ -1,13 +1,8 @@
-$(function() {
+(function(exports) {
 
-    var example = new Note();
-
-    $('#submit').click(function() {
-      display();
-    });
-
-    function display() {
-      value = $("#text").val();
-      $('#displayText').append(example.showText(value) + " ");
-    };
-});
+  function display() {
+      var x = document.getElementById("text").value;
+      document.getElementById("display").innerHTML = showText(x);
+  }
+  exports.display = display
+})(this);

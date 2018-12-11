@@ -1,8 +1,8 @@
 'use strict';
+(function(exports) {
 
-function Note() {
-}
-
-Note.prototype.showText = function (text) {
-  return text;
-};
+  function showText(text)  {
+    return text;
+  };
+  exports.showText = showText
+})(this);

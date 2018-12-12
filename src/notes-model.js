@@ -14,6 +14,4 @@
   }
 
   exports.showText = showText
-  exports.randomColor = randomColor
-  exports.maxLenght = maxLenght
 })(this)

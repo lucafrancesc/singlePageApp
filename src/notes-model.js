@@ -1,5 +1,5 @@
-
 (function(exports){
+
   function showText(string) {
     return maxLenght(string, 10).fontcolor(randomColor()) + "<br>";
   }

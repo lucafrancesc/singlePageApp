@@ -1,4 +1,3 @@
-// render the page
 (function(exports){
 
   function renderForm(){

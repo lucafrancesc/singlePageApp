@@ -1,5 +1,5 @@
 window.onload=function() {
  document.getElementById("btn").addEventListener("click", function() {
-   document.getElementById("display").innerHTML += showText(document.getElementById("text").value + "<br>");
+   document.getElementById("display").innerHTML += showText(document.getElementById("text").value);
  });
 }

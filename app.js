@@ -1,17 +1,5 @@
-// (function(exports) {
-//
-  // function display() {
-  //   var x = document.getElementById("text").value;
-  //   document.getElementById("display").innerHTML = showText(x);
-  // }
-//
-//   exports.display = display
-//
-// })(this);
-
-function display() {
-  var x = document.getElementById("text").value;
-  document.getElementById("display").innerHTML = showText(x);
+window.onload=function() {
+ document.getElementById("btn").addEventListener("click", function() {
+   document.getElementById("display").innerHTML += showText(document.getElementById("text").value + "<br>");
+ });
 }
-
-document.getElementById("btn").addEventListener("click", display);

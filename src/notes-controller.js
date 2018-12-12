@@ -5,5 +5,6 @@
       document.getElementById('display').innerHTML += showText(document.getElementById('noteArea').value) + "<br>";
     })
   }
+  
   exports.returnText = returnText
 })(this)

@@ -4,7 +4,7 @@
     document.getElementById("allNotes").addEventListener('click', function (event) {
       event.preventDefault();
       var input = document.getElementById("note").value
-      insertNote(input);
+      required(input);
       document.getElementById("notes").innerHTML = listNotes()
     })
   }
@@ -24,9 +24,12 @@
   function home() {
     document.getElementById("home").addEventListener('click', function (event) {
       event.preventDefault();
+
       document.getElementById("notes").innerHTML = listNotes()
     })
   }
+
+
 
   exports.getId = getId
   exports.home = home

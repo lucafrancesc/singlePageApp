@@ -27,8 +27,19 @@
     }
   }
 
+  function required(input) {
+     if (input.length === 0 )
+      {
+         alert("Add a note");
+         return false;
+      }
+      return insertNote(input);
+    }
+
+
   exports.showSingleNote = showSingleNote
   exports.note = note
+  exports.required = required
   exports.listNotes = listNotes
   exports.insertNote = insertNote
 })(this)

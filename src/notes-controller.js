@@ -1,24 +1,27 @@
 (function(exports) {
 
-  function showNote() {
-    document.getElementById("submit").addEventListener('click', function (event) {
+  function showNotes() {
+    document.getElementById("allNotes").addEventListener('click', function (event) {
       event.preventDefault();
       var input = document.getElementById("note").value
       insertNote(input);
-      getId()
       document.getElementById("notes").innerHTML = listNotes()
     })
   }
 
   function getId() {
     var url = window.location.hash.split('');
-    console.log(url[1])
+    return url[1];
   }
 
-  function showSingleNote() {
-
+  function showNote() {
+    document.getElementById("singleNote").addEventListener('click', function (event) {
+      event.preventDefault();
+      document.getElementById("notes").innerHTML = showSingleNote()
+    })
   }
 
-  exports.showSingleNote = showSingleNote
+  exports.getId = getId
   exports.showNote = showNote
+  exports.showNotes = showNotes
 }) (this)

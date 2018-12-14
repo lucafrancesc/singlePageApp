@@ -1,15 +1,24 @@
 (function(exports) {
 
-  function add() {
+  function showNote() {
     document.getElementById("submit").addEventListener('click', function (event) {
       event.preventDefault();
       var input = document.getElementById("note").value
       insertNote(input);
-
-      document.getElementById("notes").innerHTML = "<a href='#'>" + listNotes() + "</a>";
-
+      getId()
+      document.getElementById("notes").innerHTML = listNotes()
     })
   }
 
-  exports.add = add
+  function getId() {
+    var url = window.location.hash.split('');
+    console.log(url[1])
+  }
+
+  function showSingleNote() {
+
+  }
+
+  exports.showSingleNote = showSingleNote
+  exports.showNote = showNote
 }) (this)

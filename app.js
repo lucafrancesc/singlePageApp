@@ -1,4 +1,5 @@
 window.addEventListener('load', function (){
   form();
-  add();
+  showSingleNote();
+  showNote();
 })

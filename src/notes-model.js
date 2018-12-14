@@ -11,8 +11,10 @@
   }
 
   function listNotes(){
+    var id = 0
     var list = notes.map(function(note) {
-      return note;
+      id++
+      return "<br><a href='#" + id + "' class='links' id='" + id + "'>" + note + "</a>"
     });
     return list;
   }

@@ -23,7 +23,9 @@
     if(notes.length === 0){
       return "Empty!"
     } else {
-      return notes[getId()-1]
+      // pass string to number
+      var x = getId()
+      return notes[x]
     }
   }
 

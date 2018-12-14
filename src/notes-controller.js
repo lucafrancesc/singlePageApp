@@ -11,7 +11,8 @@
 
   function getId() {
     var url = window.location.hash.split('');
-    return url[1];
+    url.shift();
+    return url.join("")
   }
 
   function showNote() {

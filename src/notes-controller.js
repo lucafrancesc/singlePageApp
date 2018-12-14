@@ -21,7 +21,15 @@
     })
   }
 
+  function home() {
+    document.getElementById("home").addEventListener('click', function (event) {
+      event.preventDefault();
+      document.getElementById("notes").innerHTML = listNotes()
+    })
+  }
+
   exports.getId = getId
+  exports.home = home
   exports.showNote = showNote
   exports.showNotes = showNotes
 }) (this)

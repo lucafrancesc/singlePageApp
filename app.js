@@ -3,4 +3,5 @@ window.addEventListener('load', function (){
   showSingleNote();
   showNotes();
   showNote();
+  home();
 })

@@ -1,12 +1,6 @@
 (function(exports){
-
-  function renderForm(){
-    document.write("<input type='text' id='noteArea' value='text'>");
-
-    document.write("<input type='submit' id='submit'>");
-
-    document.write("<div id='display'></div>");
+  function form(){
+    document.write("<h1>hello</h1>")
   }
-
-    exports.renderForm = renderForm
+  exports.form = form
 })(this)

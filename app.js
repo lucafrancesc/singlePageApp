@@ -1,4 +1,4 @@
-window.addEventListener('load', function(event) {
-  renderForm();
-  returnText();
-});
+window.addEventListener('load', function (){
+  console.log('hi')
+  form()
+})
